@@ -9,6 +9,12 @@ models to provide functionality for:
 2. Blog
 3. Projects (which have images)
 
+Installation
+------------
+
+Install with::
+
+    pip install django-portfolio
 
 Add 'portfolio' to your INSTALLED_APPS and extend as required.  Here are some example usages assuming that you
 have created three skeleton apps in your project called contact, blog and project:
