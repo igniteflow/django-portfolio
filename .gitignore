@@ -1,4 +1,5 @@
 *.pyc
 
 .idea/
-
+django_portfolio.egg-info/
+dist/
