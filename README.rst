@@ -17,7 +17,14 @@ Install with::
     pip install django-portfolio
 
 Add 'portfolio' to your INSTALLED_APPS and extend as required.  Here are some example usages assuming that you
-have created three skeleton apps in your project called contact, blog and project:
+have created three skeleton apps in your project called contact, blog and project.  This would give you a project
+structure something like ::
+
+    /your_project
+       .
+       |-blog
+       |-contact
+       |-projects
 
 Contact
 -------
@@ -101,3 +108,4 @@ Dependencies
 
 -   django-extensions   TimeStampedModel is used as the base class for all models
 -   django-tagging      Used in blog posts. You may also want to add this to Projects
+-   django-tinymce      There as a default for Post, but can overridden

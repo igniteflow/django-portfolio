@@ -9,7 +9,7 @@ To release a new version to PyPi:
 
 from setuptools import setup, find_packages
 
-VERSION = (0, 0, 1, 'alpha', 0)
+VERSION = (0, 0, 2, 'alpha', 0)
 
 def get_short_version():
     return '%s.%s' % (VERSION[0], VERSION[1])
