@@ -5,9 +5,9 @@ A simple set of abstract models and functionality to speed up the development of
 models to provide functionality for:
 
 
-1. Contact form
-2. Blog
-3. Projects (which have images)
+- Contact form
+- Blog. Supports RST -> HTML conversion
+- Projects, which can optionally have images
 
 Installation
 ------------
