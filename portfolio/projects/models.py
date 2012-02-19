@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
 
-from django_extensions.db.models import TimeStampedModel
+from portfolio.utils.models import TimeStamp
 
 PROJECT_TYPE = (
     ('A', 'Art'),
@@ -10,7 +10,7 @@ PROJECT_TYPE = (
     ('P', 'Photography'),
     )
 
-class ProjectBase(TimeStampedModel):
+class ProjectBase(TimeStamp):
     title       = models.CharField(max_length=200)
     description = models.TextField()
     type = models.CharField(max_length=1, choices=PROJECT_TYPE)
@@ -21,7 +21,7 @@ class ProjectBase(TimeStampedModel):
     def __unicode__(self):
         return self.title
         
-class ImageBase(TimeStampedModel):
+class ImageBase(TimeStamp):
     title       = models.CharField(max_length=200)
     description = models.TextField()
     content_type = models.ForeignKey(ContentType)

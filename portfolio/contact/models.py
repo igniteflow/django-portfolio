@@ -1,8 +1,8 @@
 from django.db import models
 
-from django_extensions.db.models import TimeStampedModel
+from portfolio.utils.models import TimeStamp
 
-class MessageBase(TimeStampedModel):
+class MessageBase(TimeStamp):
     subject = models.CharField(max_length=100)
     message = models.CharField(max_length=1000)
     sender = models.EmailField()

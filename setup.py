@@ -9,7 +9,7 @@ To release a new version to PyPi:
 
 from setuptools import setup, find_packages
 
-VERSION = (0, 0, 2, 'alpha', 0)
+VERSION = (0, 0, 4, 'alpha', 0)
 
 def get_short_version():
     return '%s.%s' % (VERSION[0], VERSION[1])
@@ -38,9 +38,8 @@ setup(name='django-portfolio',
     platforms=['linux'],
     packages=find_packages(exclude=["*.tests"]),
     install_requires=[
-        'django-extensions==0.7.1',
         'django-tagging==0.3.1',
-        'django-tinymce==1.5.1b2'
+        'docutils==0.8.1',
         ],
     # See http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=['Environment :: Web Environment',
